@@ -19,7 +19,7 @@ const corsOptions = {
 //     "optionsSuccessStatus": 204
 //   }
 
-app.use(cors(corsOptions))
+app.use(cors());
 app.use(express.static('public'));
 
 const connectDB = require('./config/db');
